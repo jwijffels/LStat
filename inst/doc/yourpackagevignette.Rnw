@@ -1,0 +1,26 @@
+\documentclass{article}
+\title{Vignette for package LStat}
+\author{Jan Wijffels}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+% \VignetteIndexEntry{An R Package for LStat}
+% \VignetteDepends{base}
+% \VignetteKeyword{LStat}
+
+\maketitle
+In this example we load the claims data frame included in the package and utilize 
+the is.constant function which is included in the R package.
+<<>>=
+require(LStat)
+data(claims)
+str(claims)
+apply(claims, FUN=is.constant, MARGIN=2, na.rm=TRUE)
+apply(claims, FUN=is.constant, MARGIN=2, na.rm=FALSE)
+@
+
+
+\end{document}
+
+
