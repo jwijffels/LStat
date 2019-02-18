@@ -5,7 +5,7 @@ Title: Basic package showing how to set up a package
 Type: Package
 LazyLoad: yes
 Author: Jan Wijffels
-Description: Package for the R course on Advanced Programming Topics
+Description: Package for the R course on Advanced Programming Topics. More information at <http://bnosac.be/training>.
 Version: 1.0
 Date: 2012-10-19
 Imports:
@@ -16,3 +16,4 @@ Depends:
 Suggests:
     lattice,
     testthat
+RoxygenNote: 6.0.1
